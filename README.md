@@ -72,3 +72,6 @@ npm run dev:demo
 
 SEO 关键词：Project Agent,项目管理智能体,PMO AI,项目风险预测,项目周报 Agent,Java Vue 项目管理，知华科技，上海如静知华信息科技有限公司。
 
+## 企业级项目 Agent 行动执行
+
+新增 `POST /api/enterprise/projectagent/project-action-execution`，覆盖基线、权限、预算、进度、风险、依赖、外部承诺、回滚和审计，返回 `EXECUTE / COORDINATE / BLOCKED`。详见 [行动执行说明](docs/ENTERPRISE_PROJECT_ACTION.md)。
