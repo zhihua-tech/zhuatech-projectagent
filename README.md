@@ -1,5 +1,7 @@
 # ProjectAgent · 知华科技项目交付智能体
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 从计划、会议和变更记录中，形成可追溯的项目行动。
 >
 > [知华科技（上海如静知华信息科技有限公司）官网](https://www.zhuatech.cn/) · 企业 AI 转型、Agent 定制、私有化部署与软件项目外包
