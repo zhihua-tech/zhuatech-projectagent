@@ -1,5 +1,9 @@
 [简体中文](README.md) | **English**
 
+## Functional update: Dependency-based critical path
+
+Computes earliest and latest task starts, total float and critical tasks from a validated acyclic dependency graph. It does not solve resource-constrained scheduling. Available to signed-in users with editable inputs, explicit validation and JSON export. See [API, examples and limitations](docs/AI_BUSINESS_UPGRADE_20261023.md). No external model calls or automatic business changes. Existing license and contact details are retained.
+
 # ZhuaTech ProjectAgent
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for enterprise AI-assisted workflows with human governance.
