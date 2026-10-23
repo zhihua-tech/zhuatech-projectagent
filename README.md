@@ -89,3 +89,9 @@ SEO 关键词：Project Agent,项目管理智能体,PMO AI,项目风险预测,�
 ## 企业级项目 Agent 行动执行
 
 新增 `POST /api/enterprise/projectagent/project-action-execution`，覆盖基线、权限、预算、进度、风险、依赖、外部承诺、回滚和审计，返回 `EXECUTE / COORDINATE / BLOCKED`。详见 [行动执行说明](docs/ENTERPRISE_PROJECT_ACTION.md)。
+
+## 输入对照与版本化快照
+
+在既有「项目挣值预测与完工预算」基础上，新增 `/comparison.html`：基准与候选两组数据都由当前真实算法重算，按编号展示新增、移除、逐字段变化和精确数值差，支持筛选、分页和全量导出。原核算入口可导出输入快照，对照页经后端完整校验后整体导入；失败不覆盖当前输入。
+
+快照区分项目、字段契约及算法版本。建议较宽松不代表风险已下降，输入摘要不是签名；操作人和时间仅为响应元数据，不是持久化审计。本次未新增模型调用或业务写入，也不代表全系统生产认证。详见[输入对照操作与接口说明](docs/INPUT-COMPARISON.md)。
