@@ -1,0 +1,69 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "HOLD",
+      "cpi": "#0.8",
+      "spi": "#0.8",
+      "forecastCompletionCost": "#130000"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "earned": "0"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "forecastCompletionCost": "N/A"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "actual": "0"
+    },
+    "expected": {
+      "cpi": "N/A"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "earned": "100000",
+      "actual": "90000",
+      "contingency": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "forecastCompletionCost": "#90000"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "planned": "100001"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "earned": "100001"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "earned": "50000",
+      "actual": "50000",
+      "contingency": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "forecastCompletionCost": "#100000"
+    },
+    "error": false
+  }
+]
